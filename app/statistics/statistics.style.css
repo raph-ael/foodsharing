@@ -1,0 +1,137 @@
+
+
+.stat_item
+{
+	display: inline-block;
+    margin: 0;
+    width: 330px;
+    vertical-align:top;
+}
+.stat_badge
+{
+    display: inline-block;
+	background-color: #599022;
+    -webkit-border-radius: 300px;
+	-moz-border-radius: 300px;
+	border-radius: 300px;
+    height: 220px;
+    line-height: 300px;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+}
+.stat_icon
+{
+	display:inline-block;
+	background-image: url("/img/stat_badges.png");
+    background-repeat: no-repeat;
+    height: 96px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 96px;
+}
+
+.stat_icon.fetchcount
+{
+	background-position: -96px 0px;
+}
+.stat_icon.korpcount
+{
+	background-position: -192px 0px;
+}
+.stat_icon.fscount
+{
+	background-position: -288px 0px;
+}
+.stat_icon.fetchweight
+{
+	background-position: 0px 0px;
+}
+.stat_text h4
+{
+	paddin:0;
+	margin:10px 0;
+	font-size: 33px;
+	font-family: "Alfa Slab One";
+	font-weight:normal;
+}
+.stat_text, .stat_text h4, .stat_text p
+{
+	text-align: center;
+	color:#4A3520;
+}
+.stat_text h4
+{
+	height:40px;
+}
+.stat_text p
+{
+	display: inline-block;
+    height: 85px;
+    margin: 0 40px;
+}
+
+table.stat_cities
+{
+	border-collapse:inherit;
+	width:255px;
+	border-spacing: 0px 10px;
+}
+table.stat_cities
+{
+	vertical-align: top;	
+}
+table.stat_cities td.city div.percentbar
+{
+	width:200px;
+	background-color: #FFFFF;
+	border: 1px solid #B3AB9F;
+	height:10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+table.stat_cities td.city div.percentbar div.inner
+{
+	background: #598939;
+	background: -moz-linear-gradient(left, #598939 0%, #a4bc71 100%, #a4bc71 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#598939), color-stop(100%,#a4bc71), color-stop(100%,#a4bc71));
+	background: -webkit-linear-gradient(left, #598939 0%,#a4bc71 100%,#a4bc71 100%);
+	background: -o-linear-gradient(left, #598939 0%,#a4bc71 100%,#a4bc71 100%);
+	background: -ms-linear-gradient(left, #598939 0%,#a4bc71 100%,#a4bc71 100%);
+	background: linear-gradient(to right, #598939 0%,#a4bc71 100%,#a4bc71 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#598939', endColorstr='#a4bc71',GradientType=1 );
+	height:10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+table.stat_cities .city
+{
+	overflow:hidden;
+	line-height: 12px;
+}
+table.stat_cities td p
+{
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-top:3px;
+}
+table.stat_cities td h4
+{
+	font-family: "Alfa Slab One";
+	margin: 0;
+	padding: 0;
+	display: block;
+	font-size: 22px;
+	line-height: 24px;
+	font-weight:normal;
+	color:#599022;
+}
+#stat_whole
+{
+	text-align: center;
+	padding-top:20px;
+}
