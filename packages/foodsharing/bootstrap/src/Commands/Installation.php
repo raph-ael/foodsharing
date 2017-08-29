@@ -44,16 +44,16 @@ class Installation extends Command
          * Create Database Structure from Migrations
          */
 
-        $this->call('migrate');
+        //$this->call('migrate');
 
-        $this->call('db:seed');
+        //$this->call('db:seed');
 
 
         /*
          * minify public assets
          */
 
-        $this->call('fs:minify');
+        //$this->call('fs:minify');
 
         /*
          * Seed with static Data
@@ -63,9 +63,19 @@ class Installation extends Command
         /*
          * Seed with static Data
          */
+        /*
         $this->call('translations:export',[
             'group' => '*'
         ]);
+        */
+
+        /*
+         * set folder permissions
+         */
+        $permissions = include base_path('packages/installer/Config/installer.php');
+
+        print_r($permissions);
+        die();
 
         /*
          * comment / route out

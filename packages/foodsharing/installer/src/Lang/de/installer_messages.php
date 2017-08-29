@@ -68,4 +68,5 @@ return [
         'seed' => 'Dummy Daten einspielen',
         'dummyhead' => 'Ich habe ein paar Benutzer für Dich angelegt!'
     ],
+    'checkPermissionAgain' => ' Berechtigungen erneut prüfen'
 ];

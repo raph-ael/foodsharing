@@ -31,7 +31,6 @@ public/data/
 **/images/
 js/gen/script.js
 css/gen/style.css
-config.inc.php
 cache
 tmp
 tests/_output/*vendor
