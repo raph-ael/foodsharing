@@ -4,15 +4,7 @@ The opensourced foodsharing and saving application foodsharing.de
 
 ## About foodsharing
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+foodsharing.de is an online platform that saves and distributes surplus food in Germany and Austria. It is managed by the Foodsharing association (foodsharing e.V.) and was founded on December 12, 2012. On foodsharing.de individuals, retailers and producers can offer or collect food that would otherwise be thrown away. This service is completely free, and functions thanks to volunteer work. The projects' goal is to fight everyday food waste and to raise awareness about this problem in society. (Source: https://en.wikipedia.org/wiki/Foodsharing.de)
 
 ## Installation
 
