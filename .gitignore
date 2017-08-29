@@ -6,7 +6,6 @@
 .idea
 Homestead.json
 Homestead.yaml
-.env
 .DS_Store
 Thumbs.db
 *.sublime-project
@@ -25,8 +24,6 @@ phpunit.txt
 *~
 am_cache
 .idea
-*.swp
-*.swo
 node_modules
 public/data/
 /data/logg.txt
@@ -54,4 +51,3 @@ composer.lock
 /.vagrant
 resources/lang
 packages/foodsharing/platform/src/lang
-.env
