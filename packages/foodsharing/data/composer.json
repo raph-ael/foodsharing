@@ -1,0 +1,18 @@
+{
+    "name": "foodsharing/data",
+    "description": "Data Repositories for Foodsharing Laravel Projects",
+    "type": "package",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Raphael Wintrich",
+            "email": "raphael.wintrich@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Foodsharing\\Data\\": "src/"
+        }
+    },
+    "require": {}
+}

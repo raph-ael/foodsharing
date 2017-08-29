@@ -1,0 +1,72 @@
+div.partner
+{
+	margin: 0;
+	width:42%;
+	display:inline-block;
+	height:400px;
+	vertical-align: top;
+	margin:30px;
+}
+div.partner img
+{
+	max-width:70%;
+}
+div.partner h4 
+{
+    color: #DED9CD;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+.partner .logo
+{
+	margin-right:15px;
+	margin-bottom:10px;
+}
+.partner h3
+{
+	margin:0px 0px 10px 0px;
+	padding:0px;
+	font-size:14px;
+	line-height: normal;
+}
+.shortcode-spacer-1
+{
+	display:none;
+}
+.news-post img
+{
+	float: left;
+    margin-right: 15px;
+}
+.faq
+{
+	background-color: #fff;
+	margin-bottom:15px;
+}
+.faq h3
+{
+	color: #46891b;
+    font-family: "Alfa Slab One";
+    font-size: 25px;
+    font-weight:normal;
+}
+@media (max-width: 900px) {
+	div.partner
+	{
+		width:90%;
+		height:auto;
+	}
+	.shortcode-spacer-1
+	{
+		display:block;
+		border-bottom:1px solid #F1E7C9;
+	}
+	.news-post img
+	{
+		width:90% !important;
+		margin-bottom:15px;
+		margin-right:0;
+	}
+}

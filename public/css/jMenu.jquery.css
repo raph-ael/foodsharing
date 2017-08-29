@@ -1,0 +1,151 @@
+.jMenu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* General */
+.jMenu li {
+		list-style: none;
+		margin: 0;
+}
+
+.jMenu li a {
+	border-radius: 6px;
+	display: block;
+	font-family:"Helvetica Neue",Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+	text-decoration: none;
+}
+
+/* First level */
+.jMenu > li {
+	float: left;
+}
+.jMenu > li > a {
+	color: #fff;
+	cursor: pointer;
+	margin-top: 4px;
+	padding: 7px;
+}
+
+.jMenu > li > a > .fa {
+	font-size: 17px;
+	width:17;
+	display:inline-block;
+	text-align: center;
+}
+
+/* Lower levels */
+.jMenu li ul {
+	display: none;
+	position: absolute;
+	z-index:10;
+	padding: 4px;
+	margin: 0;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.jMenu li ul li {
+	background-color:#FFFFFF;
+	color: #4A3522;
+	display: block;
+	padding: 0;
+	position: relative;
+}
+
+.jMenu li ul li a {
+	font-size: 13px;
+	font-weight:bold;
+	text-transform: none;
+	padding: 5px ;
+	display: block;
+	color:#4A3520;
+	border:0 none;
+	margin:0;
+}
+
+.jMenu li ul li > ul
+{
+	left: 100%;
+	top: 0;
+	margin-left: -4px;
+}
+
+.jMenu > li > ul {
+  width: 200px;
+}
+
+/* Big menu is 300px wide and items are cut off instead of wrapping */
+.jMenu li ul.bigmenu, .jMenu li ul.bigmenu > li
+{
+	width:300px;
+}
+.jMenu li ul.bigmenu > li > a
+{
+	overflow: hidden;
+	white-space: nowrap !important;
+	  text-overflow: ellipsis;
+	  -o-text-overflow: ellipsis;
+}
+
+/* Icons */
+.jMenu li ul li a i
+{
+	display:inline-block;
+	width:18px;
+}
+
+/* Sub menu items with sub sub menus have an arrow icon */
+.jMenu li ul li a:not(:last-child) {
+	background-image: url('/img/arrow_right.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 18px;
+}
+
+/**
+ * Position sub menus for last three menu items at the right edge so that they
+ * are still visible on smaller screens
+ **/
+.jMenu > li {
+	position: relative;
+}
+.jmenu-settings, .jmenu-bezirke, .jmenu-foodsaver
+{
+	right: 0;
+}
+
+/* Style profile picture */
+li.g_settings a.fNiv
+{
+	background-position:center;
+	background-repeat:no-repeat;
+	width:35px;
+}
+
+/* Horizontal line in sub menus */
+.jMenu .break
+{
+	display:block;
+	background:none;
+	border:0;
+	border-bottom:1px solid #E3DED3 !important;
+}
+
+/* Hovering */
+.jMenu li:hover > ul {
+	display: block;
+}
+
+.jMenu li ul li:hover > a {
+	color:#FFFFFF;
+	background-color: #4a911c;
+}
+
+.jMenu > li > a:hover
+{
+	background-color:#967d61;
+}

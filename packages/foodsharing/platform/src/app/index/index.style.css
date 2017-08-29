@@ -1,0 +1,129 @@
+/* biglogo */
+.biglogo img
+{
+	float:left;
+}
+#top
+{
+	box-shadow:none;
+}
+.biglogo p, .biglogo h1
+{
+	color:#ffffff;
+	font-family:'Alfa Slab One';
+	font-weight:normal;
+}
+.biglogo p
+{
+	margin-top:80px;
+	font-size:40px;
+}
+.biglogo p.small
+{
+	margin-top:0px;
+	font-size:29px;
+}
+.biglogo p.tiny
+{
+	margin-top:0px;
+	font-size:25px;
+}
+.biglogo h1
+{
+	color:#5ab946;
+	font-size:50px;
+}
+.biglogo h1 span
+{
+	color:#ffffff;
+}
+.biglogo
+{
+	text-align: center;
+}
+.biglogo .centerblock
+{
+	display:inline-block;
+	text-align:left;
+	max-width:700px;
+	width:100%;
+}
+#home
+{
+	background-color: #4A3520;
+}
+#main{min-height:1000px;}
+
+.countnumber p
+{
+	font-size:40px;
+	text-align: center;
+	color:#5ab946;
+	font-family:'Alfa Slab One';
+	font-weight:normal;
+}
+.countnumber p.number
+{
+	font-size:60px;
+	color:#4A3520;
+	font-family:'Alfa Slab One';
+	font-weight:normal;
+}
+.section .inside
+{
+	padding:10px 30px;
+}
+.section .inside h3
+{
+	font-family:'Alfa Slab One';
+	font-weight:normal;
+	color:#4A3520;
+	font-size:34px;
+}
+.section .inside p
+{
+	color:#4A3520;
+}
+.linklist span.n
+{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.leaflet-top .leaflet-control
+{
+	margin-top:60px !important;	
+}
+@media (max-width: 700px) {
+	
+	
+	.section .inside
+	{
+		text-align:center;
+	}
+	.vidlink
+	{
+		margin-top:30px;
+	}
+	.biglogo h1
+	{
+		font-size:30px;
+	}
+	.biglogo p
+	{
+		margin-top:0px;
+		font-size:26px;
+	}
+	.biglogo p.small
+	{
+		font-size:22px;
+	}
+	.biglogo p.tiny
+	{
+		font-size:19px;
+	}
+	.section .inside
+	{
+		padding:0px;
+	}
+}

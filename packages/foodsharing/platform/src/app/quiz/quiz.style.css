@@ -1,0 +1,56 @@
+
+
+.answers li .dellink
+{
+	visibility:hidden;
+	cursor: pointer;
+}
+.answers li .explanation
+{
+	display:block;
+	font-style: italic;
+	padding:15px 0;
+}
+.answers li:hover .explanation
+{
+	
+}
+.answers li:hover .dellink
+{
+	visibility:visible;
+}
+ul.answers
+{
+	display:block;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+ul.answers li
+{
+	display:block;
+	list-style: none;
+	padding:10px;
+	margin: 0 0 4px 0;
+	padding:5px;
+	border-radius:15px;
+}
+.right-0
+{
+	background-color: #F5E7E7;
+	color:#CA5F59;
+}
+
+.right-1
+{
+	background-color: #EBF4C9;
+	color:#829B40;
+}
+.question
+{
+	margin-bottom:15px;
+}
+#questions
+{
+	opacity:1;
+}

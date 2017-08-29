@@ -1,0 +1,15 @@
+#search_name .tagedit-list
+{
+	width:90% !important;
+}
+#orgateam-wrapper
+{
+	display:none;
+}
+.avatarlink
+{
+	display:inline-block;
+	width:75px;
+	height:75px;
+	overflow:hidden;
+}

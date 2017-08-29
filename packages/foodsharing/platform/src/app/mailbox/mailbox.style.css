@@ -1,0 +1,349 @@
+.records-table td, .records-table th, .records-table span
+{
+	padding:0;
+	margin:0;
+	font-size:11px;
+}
+.records-table td a
+{
+	text-decoration:none;
+}
+
+.records-table {
+    border: 1px solid #d7cdbd;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.boxlistcontent .records-table {
+    border: 0 none;
+}
+.records-table thead td {
+    background: -moz-linear-gradient(left center , #ebe6de 0px, #ebe6de 14px, #ebe6de 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-left: 1px solid #d7cdbd;
+    color: #a58d6a;
+    font-size: 11px;
+    font-weight: bold;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    height:10px;
+}
+.records-table.sortheader thead td {
+    padding: 0;
+}
+.records-table thead td a, .records-table thead td span {
+    color: #a58d6a;
+    display: block;
+    overflow: hidden;
+    padding: 7px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+}
+.records-table tbody td {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+    border-left: 1px dotted #d7cdbd;
+    cursor: default;
+    overflow: hidden;
+    padding: 2px 7px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.records-table thead tr td:first-child, .records-table tbody tr td:first-child {
+    border-left: 0 none;
+}
+.records-table tr.selected td {
+    background-color:#4A3520;
+    color: #FFFFFF !important;
+}
+.records-table tr.selected td a, .records-table tr.selected td span {
+    color: #FFFFFF !important;
+}
+.records-table tr.unfocused td {
+    background: none repeat scroll 0 0 #4DB0D2 !important;
+    color: #FFFFFF !important;
+}
+.records-table tr.unfocused td a, .records-table tr.unfocused td span {
+    color: #FFFFFF !important;
+}
+.records-table tr.deleted td, .records-table tr.deleted td a {
+    color: #CCCCCC !important;
+}
+.records-table td.status
+{
+	width:20px;
+}
+.records-table td.attachment
+{
+	width:30px;
+}
+.records-table td.from
+{
+	width:200px;
+}
+.records-table td.date
+{
+	width:125px;
+}
+.records-table td.status
+{
+	border-left:0;
+}
+.buttonbar
+{
+	float:right;
+}
+.header .label
+{
+	width:100px;
+}
+.header .data
+{
+	font-weight:bold;
+}
+.mailbox-body
+{
+	background-color:#FFFFFF;
+	overflow:auto;
+	margin-top:10px;
+	padding:5px;
+	-moz-box-shadow:    inset 0 0 3px #4A3520;
+   -webkit-box-shadow: inset 0 0 3px #4A3520;
+   box-shadow:         inset 0 0 3px #4A3520;
+}
+.mailbox-body-loader
+{
+	background-image:url(img/icon-mail/attach-loader.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	overflow:auto;
+	margin-top:10px;
+	padding:5px;
+}
+
+.edit-body
+{
+	background-color:#FFFFFF;
+	margin-top:10px;
+	padding:5px;
+	border:0;
+	-moz-box-shadow:    inset 0 0 3px #4A3520;
+   -webkit-box-shadow: inset 0 0 3px #4A3520;
+   box-shadow:         inset 0 0 3px #4A3520;
+   font-size:14px;
+}
+.von-select
+{
+	width:407px;
+	padding:3px;
+	background-color:#FFF;
+	border:1px solid #EBE6DE;
+}
+td.data input.data
+{
+	width:400px;
+	padding:3px;
+	margin-top:3px;
+	background-color:#FFF;
+	border:1px solid #EBE6DE;
+}
+.message.read-0 td
+{
+	font-weight:bold;
+}
+span.status
+{
+	display:block;
+	float:left;
+	width:16px;
+	height:16px;
+	background-repeat:no-repeat;
+	margin-right:5px;
+}
+span.status.a-check
+{
+	background-image:url(img/icon-mail/attach.png);
+}
+span.status.read-0
+{
+	background-image:url(img/icon-mail/new.png);
+}
+span.status.answer-1
+{
+	background-image:url(img/icon-mail/reply.png);
+}
+#mailattch
+{
+	background-color:#FFFFFF;
+	overflow:auto;
+	margin-top:10px;
+	height:23px;
+	padding:5px;
+	-moz-box-shadow:    inset 0 0 3px #4A3520;
+   -webkit-box-shadow: inset 0 0 3px #4A3520;
+   box-shadow:         inset 0 0 3px #4A3520;
+}
+#mailattch ul
+{
+	display:block;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#mailattch ul li
+{
+	display:block;
+	list-style:none;
+	float:left;
+	margin:0;
+	padding:0;
+	margin-right:5px;
+}
+#mailattch ul li a
+{
+	display:block;
+	float:left;
+	padding:3px;
+	padding-left:20px;
+	padding-right:6px;
+	background-image:url(img/icon-mail/attach.png);
+	background-repeat:no-repeat;
+	background-position:2px 4px;
+	text-decoration:none;
+	font-weight:bold;
+}
+#mailattch ul li a:hover
+{
+	background-color:#4A3520;
+	color:#FFFFFF;
+}
+span.dynatree-folder a
+{
+	font-weight:normal;
+}
+a.newmail
+{
+	font-weight:bold !important;
+}
+table.edit-table
+{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.et-left
+{
+	width:760px;
+}
+.et-right
+{
+	padding-left: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+.et-right div.wrapper
+{
+	overflow:hidden;
+	width:185px;
+	margin-left:10px;
+}
+div.et-filebox
+{
+	text-align:center;
+}
+div.et-filebox .input-wrapper label.wrapper-label
+{
+	display:none;
+}
+#etattach-info
+{
+	display:none;
+}
+table.edit-table iframe
+{
+	visibility:hidden;
+}
+ul#et-file-list
+{
+	margin:0;
+	padding:0;
+	display:block;
+	list-style:none;
+	overflow:hidden;
+}
+ul#et-file-list li
+{
+	margin:0;
+	padding:0;
+	display:block;
+	list-style:none;
+	height:16px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+	background-image:url(img/icon-mail/attach-loader.gif);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	margin-bottom:4px;
+	width:170px;
+	padding-left:20px;
+}
+
+
+ul#et-file-list li.finish
+{
+	background-image:url(img/icon-mail/check-attach.png);
+}
+/*typahead*/
+.typeahead, .tt-query, .tt-hint {
+
+    width:400px;
+	padding:3px;
+	margin-top:3px;
+	background-color:#FFF;
+	border:1px solid #EBE6DE;
+	border-radius:3px;
+}
+.typeahead {
+    background-color: #FFFFFF;
+}
+.typeahead:focus {
+    border: 2px solid #0097CF;
+}
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+    color: #999999;
+}
+.tt-dropdown-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 3px;
+    padding: 5px 0;
+    width: 200px;
+}
+.tt-suggestion {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 3px 10px;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #4A3520;
+    color: #FFFFFF;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+.gist {
+    font-size: 14px;
+}
+.tt-dropdown-menu
+{
+	width:350px;
+}

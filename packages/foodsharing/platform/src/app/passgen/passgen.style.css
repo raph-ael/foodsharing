@@ -1,0 +1,37 @@
+.checkbox
+{
+	margin-left:8px;
+}
+.verify, .verify span
+{
+	display:block;
+	width:36px;
+	height:36px;
+	margin:0;
+	padding:0;
+}
+.verify span
+{
+	background-image:url(img/verify.png);
+	background-repeat:no-repeat;
+}
+.verify-n span
+{
+	background-position:0px 0px;
+}
+.verify-y span
+{
+	background-position:0px -36px;
+}
+tr.hover td .verify-n span
+{
+	background-position:-36px 0px;
+}
+tr.hover td .verify-y span
+{
+	background-position:-36px -36px;
+}
+.ui-icon-info
+{
+	margin-bottom:0 !important;
+}

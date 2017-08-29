@@ -1,0 +1,69 @@
+.news-post
+{
+	padding:20px;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	border-bottom:5px solid #F1E7C9;
+}
+.news-post img
+{
+	float:left;
+	margin-right:15px;
+}
+.news-post.full img
+{
+	float:right;
+	margin-right:0px;
+	margin-left:15px;
+}
+.news-post a:hover img
+{
+	opacity:0.7;
+}
+
+.news-post a.button
+{
+	margin-top:15px;
+	float:right;
+}
+.news-post h2 a
+{
+	font-family: "Alfa Slab One";
+	font-weight: normal;
+	font-size:25px;
+	margin:0;
+	padding:0;
+	color:#46891b;
+}
+.news-post h2 a:hover
+{
+	text-decoration: none;
+	color:#7DAC5F;
+}
+.news-post .small
+{
+	color:#4A3520;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	margin-bottom:15px;
+}
+.pager
+{
+	text-align: center;
+}
+.pager a
+{
+	display:inline-block;
+	margin:15px;
+	font-size: 25px;
+}
+@media (max-width: 900px) {
+	.news-post img
+	{
+		width:100% !important;
+		margin-bottom:15px;
+		margin-right:0;
+		float: none;
+	}
+}

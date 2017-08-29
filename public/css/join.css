@@ -1,0 +1,267 @@
+@CHARSET "UTF-8";
+#joinform .left
+{
+	height:376px;
+	width:220px;
+	float:left;
+	background-color: #F5F5B5;
+	margin:-3px 10px -5px -13px;
+}
+#joinform .right
+{
+	height:370px;
+	width:430px;
+	float:left;
+	margin-left:10px;
+}
+#joinform .right select
+{
+	width:220px !important;
+	cursor: pointer;
+}
+#joinform .content {
+    height: 330px !important;
+}
+
+#joinform .content textarea{
+	height:68px;
+	
+}
+#joinform .bottom {
+    text-align: right;
+    padding-right:6px;
+}
+
+#joinform .right h3
+{
+	font-size:16px;
+	color:#4a3520;
+	margin-bottom:30px;
+}
+.linklist.join li a
+{
+	font-size:16px;
+	font-weight:bold;
+	padding:10px;
+}
+.linklist.join li a, .linklist.join li a:hover, .linklist.join li a:focus, .linklist.join li a:active
+{
+	outline: none;
+}
+.linklist.join li a i{
+    float:right;
+    font-size:18px;
+    display:none;
+}
+.linklist.join li.active a i
+{
+	display:inline;
+}
+.linklist.join li.active a:hover
+{
+	background-color: transparent;
+	cursor: default;
+	color:#4A3520 !important;
+}
+.linklist.join li.active a, .linklist.join li.active a:hover
+{
+	background-color:#46891b !important;
+	color:#ffffff !important;
+}
+
+.linklist.join li a:hover
+{
+	color:#4A3520 !important;
+	background-color: #AAA174;
+}
+
+.linklist.join li.hidden a
+{
+	color:#AAA174;
+}
+.linklist.join li.hidden a:hover
+{
+	color:#AAA174 !important;
+	background-color: transparent;
+	cursor: default;
+}
+
+.iamchooser
+{
+	
+	text-align: center;
+}
+.iamchooser a, .iamchooser a:hover, .iamchooser a:focus, .iamchooser a:active {
+	outline: none;
+}
+.iamchooser a
+{
+	display:inline-block;
+	text-align: center;
+    width: 80px;
+    padding:20px;
+}
+.iamchooser a i {
+    border: 3px solid transparent;
+    
+    -webkit-border-radius: 45px;
+	-moz-border-radius: 45px;
+	border-radius: 45px;
+	
+    color: #4a3520;
+    display: inline-block;
+    font-size: 50px;
+    height: 80px;
+    line-height: 76px;
+    text-decoration: none;
+    width: 80px;
+}
+.iamchooser span
+{
+
+    color: #4a3520;
+    font-weight:bold;
+    margin-top:30px;
+    font-size:16px;
+
+}
+.iamchooser a:hover span, .iamchooser a:hover
+{
+	text-decoration:none !important;
+}
+#joinform .iamchooser a:hover span
+{
+	color:#46891b;
+}
+#joinform .iamchooser a:hover i
+{
+	text-decoration: none;
+    color: #4a3520;
+    border: 3px solid #5AB946;
+}
+#joinform .iamchooser a.active i
+{
+	background-color:#46891b !important;
+	border-color: #46891b !important;
+	color:#FFFFFF !important;
+}
+#joinform .avatar .container
+{
+	border: 3px solid #4a3520;
+    display: inline-block;
+    height: 80px;
+    line-height: 107px;
+    margin-bottom: 16px;
+    padding: 10px;
+    text-align: center;
+    width: 80px;
+}
+#joinform .avatar form .container span
+{
+	color: #4a3520;
+    font-size: 60px;
+}
+#joinform .avatar .container
+{
+  background-size: 100px auto;
+  background-position: center;
+}
+
+#joinform .avatar form .container span.fa
+{
+	display:none;
+}
+#joinform .avatar form.load .container span.fa
+{
+	display:inline-block;
+}
+#joinform .avatar form.load a.button
+{
+	visibility:hidden;
+}
+.avatar form.load .container span.mega-octicon
+{
+	display:none;
+}
+#joinform .form
+{
+	float:left;
+	width:215px;
+}
+#joinform .element-wrapper
+{
+	margin:0 0 18px 0;
+}
+#joinform .element-wrapper h4
+{
+	font-weight: normal;;
+	font-size: 12px;
+	color:#4a3520;
+}
+#joinform .avatar
+{
+	float:right;
+	width:200px;
+	text-align: center;
+}
+#join_mapview
+{
+	height: 110px;
+    width: 438px;
+    overflow: hidden;
+    margin-top:5px;
+}
+.leaflet-control-attribution.leaflet-control
+{
+	font-size: 9px !important;
+	background-color:rgba(255,255,255,0.5);
+	color:#4a3520 !important;
+}
+.leaflet-control-attribution.leaflet-control a
+{
+	color:#4a3520 !important;
+}
+.leaflet-top
+{
+	top:16px;
+}
+#joinform .element-wrapper .msg-inside
+{
+	margin-top:5px;
+    width: 393px;
+}
+.filewrapper
+{
+	overflow:hidden;
+	display:inline-block;
+	width:1px;
+	height:1px;
+	opacity:0;
+}
+#joinloader
+{
+	text-align: center;
+	font-size: 44px;
+    line-height: 365px;
+	color:#4a3520 !important;
+}
+#joinready
+{
+	padding:150px 70px 0 70px;
+}
+.ui-dialog .xhrDialog.ui-dialog-content
+{
+	overflow: hidden;
+}
+#joinform  #login_surname
+{
+	margin-right:-4px;
+}
+#joinform  #login_name
+{
+	margin-right:7px;
+}
+#joinform  #login_surname, #joinform  #login_name
+{
+	width:90px;
+}

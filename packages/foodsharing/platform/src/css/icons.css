@@ -1,0 +1,62 @@
+i.img
+{
+	background-image:url(/img/icon-img.png?v=1);
+	background-position: center;
+}
+i.img-store
+{
+	background-position:0px 0px;
+}
+i.img-vegetables
+{
+	background-position:-17px 0px;
+}
+i.img-smile
+{
+	background-position:-51px 0px;
+}
+i.img-recycle
+{
+	background-position:-68px 0px;
+}
+i.img-basket
+{
+	background-position:-34px 0px;
+}
+
+i.img-fbasket
+{
+	background-image: url(/img/bicon.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	display:inline-block;
+	width:23px;
+	height:22px;
+	margin:0;
+	padding:0;
+	position: relative;
+	top:3px;
+	
+}
+
+/* Colors */
+.brown
+{
+	background-color: #4A3520;
+}
+.yellow
+{
+	background-color: #F2CD00;
+}
+.orange
+{
+	background-color: #F4922F;
+}
+.red
+{
+	background-color: #E64B36;
+}
+.green
+{
+	background-color: #599022;
+}

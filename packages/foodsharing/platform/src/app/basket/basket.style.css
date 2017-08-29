@@ -1,0 +1,13 @@
+.basket-img
+{
+	width:85%;
+	padding:6px;
+	border-radius:6px;
+	background-color: #ffffff;
+	border:1px solid #DEDEDE;
+	margin-bottom:10px;
+}
+.findmap .vmap
+{
+	height:400px;
+}

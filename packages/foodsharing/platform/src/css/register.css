@@ -1,0 +1,372 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+strong
+{
+	font-weight:bold;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET END */
+
+.head.ui-widget-header {
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px;
+}
+
+ .custom-combobox {
+position: relative;
+display: inline-block;
+}
+.custom-combobox-toggle {
+position: absolute;
+top: 0;
+bottom: 0;
+margin-left: -1px;
+padding: 0;
+/* support: IE7 */
+*height: 1.7em;
+*top: 0.1em;
+}
+.custom-combobox-input {
+margin: 0;
+padding: 0.3em;
+width:175px;
+}
+
+body
+{
+	background-color:#F1E7C9;
+}
+body, div, p
+{
+	font-size:14px;
+	font-family:Arial, Helvetica;
+}
+p
+{
+	margin-bottom:5px;
+}
+.ui-padding
+{
+	padding:30px 60px 10px 45px;
+}
+.margin-bottom
+{
+	margin-bottom:14px;
+}
+
+.input-error
+{
+	border:1px solid #E17984;
+	background-color:#F8DBDD;
+}
+div#main
+{
+	width:660px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.clear
+{
+	clear:both;
+}
+
+
+
+
+div#main
+{
+	
+}
+div.section-header h2
+{
+	font-size:16px;
+}
+div.ss-form-question
+{
+	
+}
+div.ss-item
+{
+	margin-bottom:30px;
+}
+div.form-entry label
+{
+	
+}
+span.ss-choice-label
+{
+	
+}
+li.ss-choice-item label
+{
+	
+}
+div.form-entry textarea
+{
+	
+}
+div.ss-secondary-text
+{
+	color:#635747;
+	margin-top:5px;
+	margin-bottom:5px;
+	line-height:13px;
+	font-size:12px;
+}
+div.ss-form-question textarea
+{
+	
+}
+div.form-entry input.ss-q-short, div.ss-form-question textarea, div.form-entry input.date, div.form-entry input.ss-q-other
+{
+	border: 4px solid #CADCBA;
+    color: #000000;
+    letter-spacing: 1px;
+    padding: 5px;
+    width: 100%;
+    font-size:16px;
+     -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.ss-q-other-container input
+{
+	width:100px;
+	margin-left:10px;
+}
+
+div.form-entry input.focus
+{
+	border: 4px solid #63AF25;
+	background-color:FFFFFF;
+}
+div.form-entry select
+{
+	
+}
+div.form-entry select option
+{
+    
+}
+div.q-title
+{
+	color:#4A3522;
+	font-size:16px;
+}
+.required-asterisk
+{
+	color:red;
+}
+select
+{
+	cursor:pointer;
+	
+}
+.customSelect {
+	
+	background:url("/img/select-arrow.gif") no-repeat scroll 187px 4px #FFFFFF;
+  border: 4px solid #CADCBA;
+  padding-right:5px;
+  padding-top:6px;
+  padding-bottom:6px;
+  padding-left:6px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  cursor:pointer;
+  width:200px;
+}
+/* line 133, ../sass/style.scss */
+.customSelect.customSelectHover {
+  	border-color: #63AF25;
+}
+/* line 138, ../sass/style.scss */
+.customSelect.customSelectFocus {
+  border-color: #63AF25;
+}
+/* line 141, ../sass/style.scss */
+.customSelect.customSelectOpen {
+  border-color: #63AF25;
+  
+}
+.customSelectInner {
+	
+	padding:0;
+	margin:0;
+	width:198px !important;
+	font-size:16px;
+	height:18px;
+	color:#4A3522;
+	overflow:hidden;
+}
+
+select.hasCustomSelect
+{
+	height:38px !important;
+}
+
+.goog-inline-block {
+    display: inline-block;
+    position: relative;
+}
+.form-entry select
+{
+	color:#4A3522 !important;
+	font-size:16px !important;
+}
+.form-entry select option
+{
+	color:#4A3522;
+	font-size:16px;
+	padding:5px;
+}
+span.ss-choice-label, li.ss-choice-item label
+{
+	font-size:13px;
+}
+input.date
+{
+	cursor:pointer;
+	background:url("/img/select-arrow.gif") no-repeat scroll 136px 4px #FFFFFF;
+	width:150px !important;
+}
+div#ui-datepicker-div
+{
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px;
+  border:1px solid #635141;
+  background-color:#F1E7C9;
+}
+div.ss-section-description
+{
+	padding:5px;
+	background-color:#FFFFFF;
+	border:1px solid #57402F;
+	margin-bottom:30px;
+}
+div.g-agb
+{
+	height:300px;
+	overflow:auto;
+	background-color:#FFFFFF;
+	padding:5px;
+	line-height:15px;
+	font-size:13px;
+}
+a
+{
+	color:#65B027;
+	text-decoration:none;
+}
+a:hover
+{
+	text-decoration:underline;	
+}
+li.ss-choice-item
+{
+	display:block;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+.section-header, .section-header h2
+{
+	color:#FFFFFF;
+}
+div.teaser
+{
+	line-height:20px;
+}
+div#fotoupload h3
+{
+	fonz-size:16px;
+	font-weight:bold;
+}
+div#fotoupload p.subtitle {
+    border-bottom: 1px solid #CAC8C4;
+    color: #666666;
+    font-size: 11px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+div.fett
+{
+	font-weight:bold;
+	background-color:#FFD7D7;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:15px;
+	color:#D11111;
+	font-size:14x;
+	border:5px solid #D11111;
+	font-size:15px;
+	margin-bottom:10px;
+}
+div.fett h3
+{
+	bont-weight:bold;
+	font-size:16x;
+	margin-bottom:4px;
+}
+.pickermap {
+  width:570px;
+  height: 280px;
+}
+.ui-autocomplete
+{
+	background-color:#FFFFFF;
+	box-shadow:8px 8px 8px #666;
+	border:4px solid #CADCBA;
+}

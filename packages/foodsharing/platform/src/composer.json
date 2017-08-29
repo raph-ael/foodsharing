@@ -1,0 +1,14 @@
+{
+    "name": "foodsharing/platform",
+    "description": "Foodsharing PLatform as homemade php PRoject",
+    "authors": [
+        {
+            "name": "foodsharing dev team",
+            "email": "development@foodsharing.de"
+        }
+    ],
+    "require-dev": {
+        "codeception/codeception": "^2.2",
+        "friendsofphp/php-cs-fixer": "1.*"
+    }
+}

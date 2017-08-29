@@ -1,0 +1,18 @@
+
+.event .welcome_profile_name
+{
+	margin-left:82px !important;
+}
+div.event
+{
+	min-height:70px;
+}
+textarea.comment
+{
+	width:97% !important;
+}
+div.welcome .welcome_profile_image
+{
+	width:auto;
+	height:auto;
+}

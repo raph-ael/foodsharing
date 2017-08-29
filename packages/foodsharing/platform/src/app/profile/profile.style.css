@@ -1,0 +1,80 @@
+.infos p
+{
+	font-size: 12px;
+    letter-spacing: normal;
+    margin: 0 0 10px;
+}
+
+.verify
+{
+	color:#ffffff;
+	font-weight:bold;
+	background-color:#46891b;
+}
+
+.unverify
+{
+	color:#ffffff;
+	font-weight:bold;
+	background-color:red;
+}
+
+.profile.statdisplay {
+	position: relative;
+	top: -50px;
+	float: right;
+	display: block;
+	width: 100%;
+	margin: 0 0 -60px 0;
+}
+.profile.statdisplay .item
+{
+	float:right;
+}
+.profile.statdisplay .item span
+{
+	letter-spacing: normal;
+}
+.stat_bananacount
+{
+	background-image: url("/img/banana.png");
+    background-position: center 22px;
+    background-repeat: no-repeat;
+}
+.stat_bananacount.bouched
+{
+	background-image: url("/img/bananan.png");
+}
+.page ul.linklist
+{
+	margin-top:10px;
+	margin-bottom: 0;
+}
+
+div.statdisplay .item
+{
+	border-radius:40px;
+}
+
+#double li  
+{ 
+	width:33.333%;
+}
+
+#double ul{
+  width:100%;
+  margin-bottom:20px;
+  overflow:hidden;
+  border-top:1px solid #ccc;
+}
+#double ul li{
+  line-height:1.5em;
+  border-bottom:1px solid #ccc;
+  float:left;
+  display:inline;
+}
+a.disabled {
+    pointer-events: none;
+    background-color:  #858789;
+}
+

@@ -1,0 +1,17 @@
+{
+    "name": "foodsharing/bootstrap",
+    "description": "Bootup the Homegrown FS-Platform as Laravel Plugin",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Raphael Wintrich",
+            "email": "raphael.wintrich@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Foodsharing\\Bootstrap\\": "src/"
+        }
+    },
+    "require": {}
+}

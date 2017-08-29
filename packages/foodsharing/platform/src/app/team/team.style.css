@@ -1,0 +1,184 @@
+#team-user
+{
+	background-color: #fff;
+	padding:30px;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+#team-user h1
+{
+	font-family: 'Alfa Slab One';
+	font-size:23px;
+	font-weight:normal;
+	color:#4A3520;
+}
+#team-user small
+{
+	color:#4A3520;
+	margin-bottom:20px;
+	display:block;
+}
+#team-user p
+{
+	color:#4A3520;
+}
+#team-user .subtitle
+{
+	margin-bottom:30px;
+	font-size:12px;
+}
+#team-socials li
+{
+	border-radius:6px;
+	font-size:16px;
+	display:inline-block;
+}
+#teamlist
+{
+	display:block;
+	text-align: center;
+}
+#teamlist li
+{
+	width:28%;
+	margin:80px 24px;
+	display:inline-block;
+}
+#teamlist li a
+{
+	background-color: #fff;
+	padding:20px;
+	text-align: center;
+}
+#teamlist li a:hover
+{
+	color:#4A3520;
+	
+}
+#teamlist li a:hover span, #teamlist li a:hover h3
+{
+	background-color: transparent;
+	color:#4A3520;
+}
+#teamlist .desc
+{
+	color:#4A3520 !important;
+	display:block;
+	height:160px;
+	line-height:20px;
+}
+#teamlist h3
+{
+	font-size:16px;
+}
+#teamlist .subtitle
+{
+	color:#4A3520 !important;
+	margin-bottom:30px;
+	display:inline-block;
+	height:30px;
+}
+#teamlist .img, #team-user .img
+{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+    border: 4px solid #4a3520;
+    
+    display: inline-block;
+    height: 150px;
+    margin-bottom: 15px;
+    margin-top: -100px;
+    width: 150px;
+}
+#teamlist .img
+{
+	border-radius: 150px;
+}
+#team-user .img
+{
+	border-radius: 50px;
+	float:right;
+    height: 250px;
+    width: 200px;
+}
+#teamlist a:hover .img
+{
+	background-color: #FFFFFF !important;
+}
+#teamlist .foot, #team-user .foot
+{
+	background-color: #4A3520;
+	display:block;
+	margin:-20px;
+	line-height:30px;
+	text-align: center;
+	margin-top:30px;
+	color:#4A3520;
+}
+ #team-user .foot
+ {
+ 	margin:30px -30px -30px -30px;
+ }
+#teamlist a:hover .foot
+{
+	background-color: #967D61;
+}
+#teamlist a:hover .foot i
+{
+	color: #967D61;
+}
+#teamlist a:hover .img
+{
+	border-color: #967D61;
+}
+#teamlist a:hover .foot i:hover, #team-user .foot a:hover i
+{
+	opacity:0.6;
+}
+.foot i > span
+{
+	display:none !important;
+}
+.foot i
+{
+	color:#4A3520;
+	background-color: #fff;
+	font-size:17px;
+	padding:8px;
+	border-radius:20px;
+	margin:14px;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	text-align: center;
+}
+.tox-popup .tox-id
+{
+	width:100%;
+	padding:6px;
+	border:1px solid #F5F5B5;
+	border-radius:6px;
+	color:black;
+	text-align: center;
+	margin-bottom:15px;
+}
+@media all and (max-width: 980px) {
+	#teamlist li
+	{
+		width:42%;
+		margin:80px 24px;
+		display:inline-block;
+	}
+}
+@media all and (max-width: 700px) {
+	#teamlist li
+	{
+		width:100%;
+		margin:80px 0px;
+		display:block;
+	}
+}

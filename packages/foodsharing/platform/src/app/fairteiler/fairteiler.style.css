@@ -1,0 +1,80 @@
+.ft-head
+{
+	height:80px;
+	width:100%;
+	background-image: url(img/fairteiler_head.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+
+}
+/* fairteilerlist */
+ul.fairteilerlist li a span.image
+{
+	display:block;
+	width:60px;
+	height:60px;
+	float:left;
+	margin-right:10px;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+ul.fairteilerlist li a span.image.noimage
+{
+	background-color:#FFFFFF;
+}
+span.clear
+{
+	display:block;
+	clear:both;
+}
+textarea.comment
+{
+	width:475px;
+}
+
+/*wallpost*/
+td.msgsm
+{
+	width:312px;
+}
+span#wallpost-loader img
+{
+	margin:5px;
+}
+
+#wallpost-submit
+{
+	text-align: right;
+	height:48px;
+	overflow: hidden;
+}
+#wallpost-attach-trigger
+{
+	position:relative;
+	top:30px;
+}
+.attach-image
+{
+	position:absolute;
+	display:block;
+	width:100px;
+	height:15px;
+	overflow:hidden;
+}
+#fbshare-dialog
+{
+	text-align: center;
+}
+#fbshare-dialog a img
+{
+	margin:15px;
+}
+@media all and (max-width: 500px) {
+  	#fbshare-wrapper
+	{
+		display:none;
+	}
+	textarea.comment {
+	    width: 94% !important;
+	}
+}

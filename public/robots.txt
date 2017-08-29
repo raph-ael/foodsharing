@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /essenskoerbe/0*
+Disallow: /essenskoerbe/1*
+Disallow: /essenskoerbe/2*
+Disallow: /essenskoerbe/3*
+Disallow: /essenskoerbe/4*
+Disallow: /essenskoerbe/5*
+Disallow: /essenskoerbe/6*
+Disallow: /essenskoerbe/7*
+Disallow: /essenskoerbe/8*
+Disallow: /essenskoerbe/9*

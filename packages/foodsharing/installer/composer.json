@@ -1,0 +1,20 @@
+{
+  "name": "foodsharing/installer",
+  "description": "Foodsharing web installer",
+  "authors": [
+    {
+      "name": "Raphael Wintrich",
+      "email": "raphael.wintrich@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Foodsharing\\Installer\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
