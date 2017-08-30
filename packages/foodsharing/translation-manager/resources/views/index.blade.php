@@ -1,16 +1,11 @@
 @extends((isset($package) ? $package . '::' : '') . 'layouts.master')
 
+
 @section('content')
     <div class="col-sm-12 translation-manager">
         <div class="row">
             <div class="col-sm-8">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h1>@lang('translation-manager.translation-manager')</h1>
-                        {{-- csrf_token() --}}
-                        {{--{!! $userLocales !!}--}}
-                    </div>
-                </div>
+
                 <div class="row">
                     <div class="col-sm-12">
                         <p>@lang('translation-manager.export-warning-text') </p>
@@ -86,6 +81,7 @@
                                             data-remote="true" role="form">
                                         <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                         <div class="row">
+
                                             <div class="col-sm-6">
                                                 <?= ifEditTrans('translation-manager.import-add') ?>
                                                 <?= ifEditTrans('translation-manager.import-replace') ?>
@@ -99,8 +95,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <?= ifEditTrans('translation-manager.import-groups') ?>
-                                                <?= ifEditTrans('translation-manager.loading') ?>
+                                                <?= trans('translation-manager.import-groups') ?>
+                                                <?= trans('translation-manager.loading') ?>
                                                 <button id="submit-import-all" type="submit" form="form-import-all"
                                                         class="btn btn-sm btn-success"
                                                         data-disable-with="<?= noEditTrans('translation-manager.loading') ?>">
@@ -149,7 +145,7 @@
                             <div class="col-sm-12">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <?= ifEditTrans('translation-manager.choose-group'); ?>
+                                        <?php // trans('translation-manager.choose-group'); ?>
                                         <div class="input-group-sm">
                                             <?= Form::select('group', $groups, $group, array(
                                                 'form' => 'form-select', 'class' => 'group-select form-control'
@@ -171,9 +167,7 @@
                                                 role="button" class="btn btn-primary btn-sm">
                                             <?= noEditTrans('translation-manager.zip-group') ?>
                                         </a>
-                                        <?= ifEditTrans('translation-manager.search'); ?>
-                                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-                                                data-target="#searchModal"><?= noEditTrans('translation-manager.search') ?></button>
+
                                         <?php endif; ?>
                                         <div class="input-group" style="float:right; display:inline">
                                             <?php if ($group): ?>
@@ -193,9 +187,8 @@
                                         </div>
                                         <?php else: ?>
                                         <?php if ($group): ?>
-                                        <?= ifEditTrans('translation-manager.search'); ?>
-                                        <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-                                                data-target="#searchModal"><?= noEditTrans('translation-manager.search') ?></button>
+                                        <?php //ifEditTrans('translation-manager.search'); ?>
+
                                         <?php endif; ?>
                                         <?php endif; ?>
                                     </div>
@@ -231,15 +224,8 @@
                         <div style="min-height: 10px"></div>
                         <div class="row">
                             <?php if(!$group): ?>
-                            <div class="col-sm-10">
+                            <div class="col-sm-12">
                                 <p>@lang('translation-manager.choose-group-text')</p>
-                            </div>
-                            <div class="col-sm-2">
-                                <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-                                        data-target="#searchModal" style="float:right; display:inline">
-                                    <?= noEditTrans('translation-manager.search') ?>
-                                </button>
-                                <?= ifEditTrans('translation-manager.search') ?>
                             </div>
                             <?php endif; ?>
                         </div>
@@ -255,33 +241,7 @@
                                 action="<?= action($controller . '@getInterfaceLocale') ?>">
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                             <div class="row">
-                                <div class=" col-sm-3">
-                                    @if($adminEnabled && count($connection_list) > 1)
-                                        <div class="input-group-sm">
-                                            <label for="db-connection"><?= trans('translation-manager.db-connection') ?>:</label>
-                                            <br>
-                                            <select name="c" id="db-connection" class="form-control">
-                                                @foreach($connection_list as $connection => $description)
-                                                    <option value="<?=$connection?>"<?= $connection_name === $connection ? ' selected="selected"' : ''?>><?= $description ?></option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    @else
-                                        &nbsp;
-                                    @endif
-                                </div>
-                                <div class=" col-sm-2">
-                                    <div class="input-group-sm">
-                                        <label for="interface-locale"><?= trans('translation-manager.interface-locale') ?>:</label>
-                                        <br>
-                                        <select name="l" id="interface-locale" class="form-control">
-                                            @foreach($locales as $locale)
-                                                <option value="<?=$locale?>"<?= $currentLocale === $locale ? ' selected="selected"' : ''?>><?= $locale ?></option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class=" col-sm-2">
+                                <div class=" col-sm-6">
                                     <div class="input-group-sm">
                                         <label for="translating-locale"><?= trans('translation-manager.translating-locale') ?>:</label>
                                         <br>
@@ -294,7 +254,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class=" col-sm-2">
+                                <div class=" col-sm-6">
                                     <div class="input-group-sm">
                                         <label for="primary-locale"><?= trans('translation-manager.primary-locale') ?>:</label>
                                         <br>
@@ -305,19 +265,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class=" col-sm-3">
-                                    <?php if(str_contains($userLocales, ',' . $currentLocale . ',')): ?>
-                                    <div class="input-group input-group-sm" style="float:right; display:inline">
-                                        <?= ifEditTrans('translation-manager.in-place-edit') ?>
-                                        <label for="edit-in-place">&nbsp;</label>
-                                        <br>
-                                        <a class="btn btn-sm btn-primary" role="button" id="edit-in-place" href="<?= action($controller . '@getToggleInPlaceEdit') ?>">
-                                            <?= noEditTrans('translation-manager.in-place-edit') ?>
-                                        </a>
-                                    </div>
-                                    <?php endif ?>
-                                </div>
                             </div>
+                            <!--
                             <div style="min-height: 10px"></div>
                             <div class="row">
                                 <div class=" col-sm-4">
@@ -353,6 +302,7 @@
                                     </div>
                                 </div>
                             </div>
+                            -->
                         </form>
                     </div>
                 </div>
@@ -525,20 +475,13 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-4">
+                                            <div class="col-sm-6">
                                                 <?= ifEditTrans('translation-manager.addsuffixes') ?>
                                                 <button class="btn btn-sm btn-primary"
                                                         onclick="addStandardSuffixes(event)"><?= noEditTrans('translation-manager.addsuffixes') ?></button>
                                                 <?= ifEditTrans('translation-manager.clearsuffixes') ?>
                                                 <button class="btn btn-sm btn-primary"
                                                         onclick="clearSuffixes(event)"><?= noEditTrans('translation-manager.clearsuffixes') ?></button>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <span style="float:right; display:inline">
-                                                    <?= ifEditTrans('translation-manager.search'); ?>
-                                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal"
-                                                            data-target="#searchModal"><?= noEditTrans('translation-manager.search') ?></button>
-                                                </span>
                                             </div>
                                         </div>
                                         <?=  Form::close() ?>
@@ -697,9 +640,9 @@
             <div class="col-sm-12 ">
                 <label for="show-matching-text" id="show-matching-text-label" class="regex-error">&nbsp;</label>
                 <div class="form-inline">
-                    <?= ifEditTrans('translation-manager.show-matching-text') ?>
+                    <?= trans('translation-manager.show-matching-text') ?>
                     <div class="input-group input-group-sm">
-                        <input class="form-control" style="width: 200px;" id="show-matching-text" type="text" placeholder="{{noEditTrans('translation-manager.show-matching-text')}}">
+                        <input class="form-control" style="width: 200px;" id="show-matching-text" type="text" placeholder="{{trans('translation-manager.show-matching-text')}}">
                         <span class="input-group-btn">
                             <button type="button" class="btn btn-default" id="show-matching-clear" style="margin-right: 15px;">
                                 &times;

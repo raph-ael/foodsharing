@@ -1,6 +1,14 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i");
 
+@font-face{
+  font-family:'Alfa Slab One';
+  src:url('/fonts/alfaslabone/alfaslabone-regular.eot');
+  src:url('/fonts/alfaslabone/alfaslabone-regular.eot?#iefix') format('embedded-opentype'), url('/fonts/alfaslabone/alfaslabone-regular.woff') format('woff'), url('/fonts/alfaslabone/alfaslabone-regular.ttf') format('truetype'), url('/fonts/alfaslabone/alfaslabone-regular.svg#alfa_slab_oneregular') format('svg');
+  font-weight:normal;
+  font-style:normal
+}
+
 @import "variable-overrides";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 @import "~font-awesome/scss/font-awesome";
@@ -57,3 +65,15 @@
 
 // Plugins
 @import "../plugin/sweetalert/sweetalert.scss";
+
+.popover {
+  max-width: 500px !important;
+}
+.panel-primary
+{
+  border:0 !important;
+}
+.logo-lg > span
+{
+  color:#5AB946;
+}

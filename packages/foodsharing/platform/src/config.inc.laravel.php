@@ -54,4 +54,4 @@ if(!defined('SOCK_URL')) {
 
 define('LOCALE', config('app.locale'));
 define('LOCALES', config('translation-manager.locales'));
-define('MD5_SALT', 'very-secret-characters12345');
+define('MD5_SALT', config('app.key'));

@@ -14,17 +14,17 @@
             </div><!--pull-left-->
         </div><!--user-panel-->
 
-        <!-- search form (Optional) -->
+        <!-- search form (Optional) --
         {{ Form::open(['route' => 'admin.search.index', 'method' => 'get', 'class' => 'sidebar-form']) }}
         <div class="input-group">
             {{ Form::text('q', Request::get('q'), ['class' => 'form-control', 'required' => 'required', 'placeholder' => trans('strings.backend.general.search_placeholder')]) }}
 
             <span class="input-group-btn">
                     <button type='submit' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                  </span><!--input-group-btn-->
-        </div><!--input-group-->
+                  </span><!--input-group-btn--
+        </div><!--input-group--
     {{ Form::close() }}
-    <!-- /.search form -->
+    <!-- /.search form --
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">

@@ -12,7 +12,7 @@ class FsFoodsaverTableSeeder extends Seeder
      */
     public function run()
     {
-        
+        $password = 'password';
 
         \DB::table('fs_foodsaver')->delete();
         
@@ -36,7 +36,7 @@ class FsFoodsaverTableSeeder extends Seeder
                 'photo' => NULL,
                 'photo_public' => 0,
                 'email' => 'foodsharer@fs.com',
-                'passwd' => 'a97ae585d076f86c09de95c97705841b',
+                'passwd' => $this->encryptMd5($password, 'foodsharer@fs.com'),
                 'name' => 'Peter',
                 'admin' => NULL,
                 'nachname' => 'Foodsharer',
@@ -97,7 +97,7 @@ class FsFoodsaverTableSeeder extends Seeder
                 'photo' => NULL,
                 'photo_public' => 1,
                 'email' => 'foodsaver@fs.com',
-                'passwd' => '0763f5b7737f6151d882fe63442399ce',
+                'passwd' => $this->encryptMd5($password, 'foodsaver@fs.com'),
                 'name' => 'Jesus',
                 'admin' => NULL,
                 'nachname' => 'Foodsaver',
@@ -158,7 +158,7 @@ class FsFoodsaverTableSeeder extends Seeder
                 'photo' => NULL,
                 'photo_public' => 1,
                 'email' => 'betrieb-admin@fs.com',
-                'passwd' => '1531ac4aeaf750ef7bfe9b4164476bf5',
+                'passwd' => $this->encryptMd5($password, 'betrieb-admin@fs.com'),
                 'name' => 'Jürgen',
                 'admin' => NULL,
                 'nachname' => 'Betrieb-Admin',
@@ -219,7 +219,7 @@ class FsFoodsaverTableSeeder extends Seeder
                 'photo' => NULL,
                 'photo_public' => 1,
                 'email' => 'botschafter@fs.com',
-                'passwd' => 'f90f91687deffd827e499bbb7ac1e302',
+                'passwd' => $this->encryptMd5($password, 'botschafter@fs.com'),
                 'name' => 'Sabine',
                 'admin' => NULL,
                 'nachname' => 'Botschafter',
@@ -280,7 +280,7 @@ class FsFoodsaverTableSeeder extends Seeder
                 'photo' => NULL,
                 'photo_public' => 1,
                 'email' => 'orgateam@fs.com',
-                'passwd' => '785f4e6f416d6feae960e77ae21ce3fd',
+                'passwd' => $this->encryptMd5($password, 'orgateam@fs.com'),
                 'name' => 'Klaus',
                 'admin' => NULL,
                 'nachname' => 'Orgateam',
@@ -341,7 +341,7 @@ class FsFoodsaverTableSeeder extends Seeder
                 'photo' => NULL,
                 'photo_public' => 1,
                 'email' => 'admin@fs.com',
-                'passwd' => '43894eebaa2c924e5e7bc3fd39f9268d',
+                'passwd' => $this->encryptMd5($password, 'admin@fs.com'),
                 'name' => 'Hans',
                 'admin' => 1,
                 'nachname' => 'Admin',
@@ -386,5 +386,11 @@ class FsFoodsaverTableSeeder extends Seeder
         ));
         
         
+    }
+
+    private function encryptMd5($password, $email)
+    {
+        $email = strtolower($email);
+        return md5($email.config('app.key').$password);
     }
 }

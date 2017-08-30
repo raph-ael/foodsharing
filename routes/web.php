@@ -5,8 +5,6 @@
  * Routes that are used between both frontend and backend.
  */
 
-use Foodsharing\TranslationManager\Translator;
-
 // Switch between the included languages
 Route::get('lang/{lang}', 'LanguageController@swap');
 

@@ -232,7 +232,7 @@ class Controller extends BaseController
         $primaryLocale = $this->primaryLocale;
         $translatingLocale = $this->translatingLocale;
 
-        $groups = array('' => noEditTrans('translation-manager.choose-group')) + $this->manager->getGroupList();
+        $groups = array('' => trans('translation-manager.choose-group')) + $this->manager->getGroupList();
 
         if ($group != null && !array_key_exists($group, $groups)) {
             return \Redirect::action(ManagerServiceProvider::CONTROLLER_PREFIX . get_class($this) . '@getIndex');

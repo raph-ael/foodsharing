@@ -102,7 +102,7 @@ $(function(){
             type: "info",
             showCancelButton: true,
             cancelButtonText: cancel,
-            confirmButtonColor: "#3C8DBC",
+            confirmButtonColor: "#4A3520",
             confirmButtonText: confirm,
             closeOnConfirm: true
         }, function(confirmed) {

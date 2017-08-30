@@ -122,7 +122,7 @@ $.AdminLTE.options = {
     },
     //Define the set of colors to use globally around the website
     colors: {
-        lightBlue: '#3c8dbc',
+        lightBlue: '#4A3520',
         red: '#f56954',
         green: '#00a65a',
         aqua: '#00c0ef',
@@ -140,7 +140,7 @@ $.AdminLTE.options = {
         gray: '#d2d6de'
     },
     //The standard screen sizes that bootstrap uses.
-    //If you change these in the variables.less file, change
+    //If you change these in the variables.less file,  change
     //them here too.
     screenSizes: {
         xs: 480,

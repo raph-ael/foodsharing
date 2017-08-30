@@ -1,8 +1,15 @@
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h3 class="panel-title">@lang('translation-manager.stats')</h3>
+<div class="box">
+    <div class="box-header">
+        <h3 class="box-title">@lang('translation-manager.stats')</h3>
+        <div class="box-tools pull-right">
+            <div class="pull-right mb-10 hidden-sm hidden-xs">
+                <button type="button" class="btn btn-primary btn-xs" data-toggle="modal"
+                        data-target="#searchModal"><?= trans('translation-manager.search') ?></button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </div>
-    <div class="panel-body">
+    <div class="box-body">
         <table class="table table-condensed translation-stats">
             <thead>
                 <tr>

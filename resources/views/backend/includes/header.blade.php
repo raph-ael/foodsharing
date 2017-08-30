@@ -3,12 +3,12 @@
     <a href="{{ route('frontend.index') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini">
-           {{ substr(app_name(), 0, 1) }}
+           {{ strtolower(substr(app_name(), 0, 1)) }}
         </span>
 
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
-            {{ app_name() }}
+            food<span>sharing</span>
         </span>
     </a>
 
@@ -23,12 +23,12 @@
                 @if (config('locale.status') && count(config('locale.languages')) > 1)
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            <i class="fa fa-language"></i> {{ trans('menus.language-picker.language') }} <span class="caret"></span>
+                            <i class="fa fa-globe"></i> {{ trans('menus.language-picker.language') }} <span class="caret"></span>
                         </a>
                         @include('includes.partials.lang')
                     </li>
                 @endif
-
+                <!--
                 <li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope-o"></i>
@@ -41,7 +41,7 @@
                             {{ link_to('#', trans('strings.backend.general.see_all.messages')) }}
                         </li>
                     </ul>
-                </li><!-- /.messages-menu -->
+                </li><!-- /.messages-menu --
 
                 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -55,7 +55,7 @@
                             {{ link_to('#', trans('strings.backend.general.see_all.notifications')) }}
                         </li>
                     </ul>
-                </li><!-- /.notifications-menu -->
+                </li><!-- /.notifications-menu --
 
                 <li class="dropdown tasks-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -79,13 +79,13 @@
 
                     <ul class="dropdown-menu">
                         <li class="user-header">
-                            <img src="{{ access()->user()->picture }}" class="img-circle" alt="User Avatar" />
+                            <!-- <img src="{{ access()->user()->picture }}" class="img-circle" alt="User Avatar" /> -->
                             <p>
                                 {{ access()->user()->full_name }} - {{ implode(", ", access()->user()->roles->pluck('name')->toArray()) }}
                                 <small>{{ trans('strings.backend.general.member_since') }} {{ access()->user()->created_at->format("m/d/Y") }}</small>
                             </p>
                         </li>
-
+                        <!--
                         <li class="user-body">
                             <div class="col-xs-4 text-center">
                                 {{ link_to('#', 'Link') }}
@@ -97,6 +97,7 @@
                                 {{ link_to('#', 'Link') }}
                             </div>
                         </li>
+                        -->
 
                         <li class="user-footer">
                             <div class="pull-left">

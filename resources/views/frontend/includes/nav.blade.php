@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#frontend-navbar-collapse">
@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            {{ link_to_route('frontend.index', app_name(), [], ['class' => 'navbar-brand']) }}
+            <a href="{{ url('') }}" class="navbar-brand">food<span>sharing</span></a>
         </div><!--navbar-header-->
 
         <div class="collapse navbar-collapse" id="frontend-navbar-collapse">
@@ -53,8 +53,6 @@
                         </ul>
                     </li>
                 @endif
-
-                <li>{{ link_to_route('frontend.contact', trans('navs.frontend.contact'), [], ['class' => active_class(Active::checkRoute('frontend.contact')) ]) }}</li>
             </ul>
         </div><!--navbar-collapse-->
     </div><!--container-->

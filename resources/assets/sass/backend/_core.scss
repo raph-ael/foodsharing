@@ -79,10 +79,10 @@ body {
   z-index: 800;
 }
 .main-footer {
-  background: #fff;
+  background: transparent;
+  border: 0 !important;
   padding: 15px;
   color: #444;
-  border-top: 1px solid $gray;
 }
 
 /* Fixed layout */

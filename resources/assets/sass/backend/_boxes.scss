@@ -7,6 +7,7 @@
   @include border-radius-same($box-border-radius);
   background: #ffffff;
   border-top: 3px solid $box-default-border-top-color;
+  border-top-color: #fff !important;
   margin-bottom: 20px;
   width: 100%;
   box-shadow: $box-boxshadow;

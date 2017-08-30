@@ -31,11 +31,11 @@
             <?php if ($col < 3): ?>
             <?php if ($col === 0): ?>
             <th width="<?=$mainWidth?>%"><?= $locale ?>&nbsp;
-                <?= ifEditTrans('translation-manager.auto-fill-disabled') ?>
-                <?= ifEditTrans('translation-manager.auto-fill') ?>
+                <?php // ifEditTrans('translation-manager.auto-fill-disabled') ?>
+                <?php // trans('translation-manager.auto-fill') ?>
                 <a class="btn btn-xs btn-primary" id="auto-fill" role="button" <?= $isLocaleEnabled ? '' : 'disabled' ?>
-                data-disable-with="<?=noEditTrans('translation-manager.auto-fill-disabled')?>"
-                        href="#"><?= noEditTrans('translation-manager.auto-fill') ?></a>
+                data-disable-with="<?=trans('translation-manager.auto-fill-disabled')?>"
+                        href="#"><?= trans('translation-manager.auto-fill') ?></a>
             </th>
             <?php elseif (isset($yandex_key) && $yandex_key): ?>
             <th width="<?=$mainWidth?>%"><?= $locale ?>&nbsp;
