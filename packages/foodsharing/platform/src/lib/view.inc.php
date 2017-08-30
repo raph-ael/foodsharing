@@ -302,7 +302,7 @@ function v_msgBar()
 					<span style="display:none;" class="linkwrapper corner-all ui-shadow">
 						<ul class="linklist conversation-list">
 						</ul>
-						<a class="more" href="/?page=msg">Alle zeigen</a>
+						<a class="more" href="/messages">Alle zeigen</a>
 					</span>
 				</li>
 			
@@ -313,7 +313,7 @@ function v_msgBar()
 					<span style="display:none;" class="linkwrapper corner-all ui-shadow">
 						<ul class="linklist conversation-list">
 						</ul>
-						<!-- <a class="more" href="/?page=msg">Alle zeigen</a> -->
+						<!-- <a class="more" href="/messages">Alle zeigen</a> -->
 					</span>
 					
 				</li>

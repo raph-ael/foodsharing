@@ -92,7 +92,7 @@ var conv = {
 			}
 			else
 			{
-				goTo('/?page=msg&cid=' + cid);
+				goTo('/messages?cid=' + cid);
 			}
 		}
 		else
@@ -479,7 +479,7 @@ var conv = {
 		{
 			right = 20 + (this.chatCount*285);
 			
-			options = '<li><a href="/?page=msg&cid='+cid+'">Alle Nachrichten</a></li>';
+			options = '<li><a href="/messages?cid='+cid+'">Alle Nachrichten</a></li>';
 			
 			var $el = $('<div id="chat-'+cid+'" class="chatbox ui-corner-top" style="bottom: 0px; right: '+right+'px; display: block;"></div>').appendTo('body');
 			$el.html('<div class="chatboxhead ui-corner-top"><a class="chatboxtitle" href="#" onclick="conv.togglebox(' + cid + ');return false;"><i class="fa fa-spinner fa-spin"></i> ' + name + '</a><ul style="display:none;" class="settings linklist linkbubble ui-shadow corner-all">'+options+'</ul><div class="chatboxoptions"><a href="#" class="fa fa-gear" title="Einstellungen" onclick="conv.settings('+cid+');return false;"></a><a title="schließen" class="fa fa-close" href="#" onclick="conv.close('+cid+');return false;"></a></div><br clear="all"/></div><div class="chatboxcontent"></div><div class="chatboxinput"><textarea placeholder="schreibe etwas..." class="chatboxtextarea" onkeydown="conv.checkInputKey(event,this,\''+cid+'\');"></textarea></div>');

@@ -1,0 +1,1005 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Laravel Generator APIs",
+        "version": "1.0.0"
+    },
+    "basePath": "/api/v1",
+    "paths": {
+        "/areas": {
+            "get": {
+                "tags": [
+                    "Area"
+                ],
+                "summary": "Get a listing of the Areas.",
+                "description": "Get all Areas",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Area"
+                                    }
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/areas/{id}": {
+            "get": {
+                "tags": [
+                    "Area"
+                ],
+                "summary": "Display the specified Area",
+                "description": "Get Area",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of Area",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Area"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/conversations": {
+            "get": {
+                "tags": [
+                    "Conversation"
+                ],
+                "summary": "Get a listing of the Conversations.",
+                "description": "Get all Conversations",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Conversation"
+                                    }
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/conversations/{id}": {
+            "get": {
+                "tags": [
+                    "Conversation"
+                ],
+                "summary": "Display the specified Conversation",
+                "description": "Get Conversation",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of Conversation",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Conversation"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/stores": {
+            "get": {
+                "tags": [
+                    "Store"
+                ],
+                "summary": "Get a listing of the Stores.",
+                "description": "Get all Stores",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Store"
+                                    }
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/stores/{id}": {
+            "get": {
+                "tags": [
+                    "Store"
+                ],
+                "summary": "Display the specified Store",
+                "description": "Get Store",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of Store",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Store"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/storeCategories": {
+            "get": {
+                "tags": [
+                    "StoreCategory"
+                ],
+                "summary": "Get a listing of the StoreCategories.",
+                "description": "Get all StoreCategories",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/StoreCategory"
+                                    }
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "StoreCategory"
+                ],
+                "summary": "Store a newly created StoreCategory in storage",
+                "description": "Store StoreCategory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "StoreCategory that should be stored",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/StoreCategory"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/StoreCategory"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/storeCategories/{id}": {
+            "get": {
+                "tags": [
+                    "StoreCategory"
+                ],
+                "summary": "Display the specified StoreCategory",
+                "description": "Get StoreCategory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of StoreCategory",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/StoreCategory"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "StoreCategory"
+                ],
+                "summary": "Update the specified StoreCategory in storage",
+                "description": "Update StoreCategory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of StoreCategory",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "StoreCategory that should be updated",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/StoreCategory"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/StoreCategory"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "StoreCategory"
+                ],
+                "summary": "Remove the specified StoreCategory from storage",
+                "description": "Delete StoreCategory",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of StoreCategory",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "string"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/storestatuses": {
+            "get": {
+                "tags": [
+                    "Storestatus"
+                ],
+                "summary": "Get a listing of the Storestatuses.",
+                "description": "Get all Storestatuses",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/Storestatus"
+                                    }
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Storestatus"
+                ],
+                "summary": "Store a newly created Storestatus in storage",
+                "description": "Store Storestatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Storestatus that should be stored",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/Storestatus"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Storestatus"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        },
+        "/storestatuses/{id}": {
+            "get": {
+                "tags": [
+                    "Storestatus"
+                ],
+                "summary": "Display the specified Storestatus",
+                "description": "Get Storestatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of Storestatus",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Storestatus"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Storestatus"
+                ],
+                "summary": "Update the specified Storestatus in storage",
+                "description": "Update Storestatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of Storestatus",
+                        "required": true,
+                        "type": "integer"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Storestatus that should be updated",
+                        "required": false,
+                        "schema": {
+                            "$ref": "#/definitions/Storestatus"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "$ref": "#/definitions/Storestatus"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Storestatus"
+                ],
+                "summary": "Remove the specified Storestatus from storage",
+                "description": "Delete Storestatus",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "id of Storestatus",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "successful operation",
+                        "schema": {
+                            "properties": {
+                                "success": {
+                                    "type": "boolean"
+                                },
+                                "data": {
+                                    "type": "string"
+                                },
+                                "message": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Area": {
+            "required": [
+                ""
+            ],
+            "properties": {
+                "id": {
+                    "description": "id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "parent_id": {
+                    "description": "parent_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "has_children": {
+                    "description": "has_children",
+                    "type": "boolean"
+                },
+                "type": {
+                    "description": "type",
+                    "type": "boolean"
+                },
+                "teaser": {
+                    "description": "teaser",
+                    "type": "string"
+                },
+                "desc": {
+                    "description": "desc",
+                    "type": "string"
+                },
+                "photo": {
+                    "description": "photo",
+                    "type": "string"
+                },
+                "master": {
+                    "description": "master",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "mailbox_id": {
+                    "description": "mailbox_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "name",
+                    "type": "string"
+                },
+                "email": {
+                    "description": "email",
+                    "type": "string"
+                },
+                "email_pass": {
+                    "description": "email_pass",
+                    "type": "string"
+                },
+                "email_name": {
+                    "description": "email_name",
+                    "type": "string"
+                },
+                "apply_type": {
+                    "description": "apply_type",
+                    "type": "boolean"
+                },
+                "banana_count": {
+                    "description": "banana_count",
+                    "type": "boolean"
+                },
+                "fetch_count": {
+                    "description": "fetch_count",
+                    "type": "boolean"
+                },
+                "week_num": {
+                    "description": "week_num",
+                    "type": "boolean"
+                },
+                "report_num": {
+                    "description": "report_num",
+                    "type": "boolean"
+                },
+                "stat_fetchweight": {
+                    "description": "stat_fetchweight",
+                    "type": "number",
+                    "format": "float"
+                },
+                "stat_fetchcount": {
+                    "description": "stat_fetchcount",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "stat_postcount": {
+                    "description": "stat_postcount",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "stat_betriebcount": {
+                    "description": "stat_betriebcount",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "stat_korpcount": {
+                    "description": "stat_korpcount",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "stat_botcount": {
+                    "description": "stat_botcount",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "stat_fscount": {
+                    "description": "stat_fscount",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "stat_fairteilercount": {
+                    "description": "stat_fairteilercount",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "conversation_id": {
+                    "description": "conversation_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "moderated": {
+                    "description": "moderated",
+                    "type": "boolean"
+                }
+            }
+        },
+        "Content": {
+            "required": [
+                ""
+            ],
+            "properties": {
+                "id": {
+                    "description": "id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "name",
+                    "type": "string"
+                },
+                "title": {
+                    "description": "title",
+                    "type": "string"
+                },
+                "body": {
+                    "description": "body",
+                    "type": "string"
+                }
+            }
+        },
+        "Conversation": {
+            "required": [
+                ""
+            ],
+            "properties": {
+                "id": {
+                    "description": "id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "locked": {
+                    "description": "locked",
+                    "type": "boolean"
+                },
+                "name": {
+                    "description": "name",
+                    "type": "string"
+                },
+                "last_foodsaver_id": {
+                    "description": "last_foodsaver_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "start_foodsaver_id": {
+                    "description": "start_foodsaver_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "last_message_id": {
+                    "description": "last_message_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "last_message": {
+                    "description": "last_message",
+                    "type": "string"
+                },
+                "member": {
+                    "description": "member",
+                    "type": "string"
+                }
+            }
+        },
+        "Store": {
+            "required": [
+                ""
+            ],
+            "properties": {
+                "id": {
+                    "description": "id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "betrieb_status_id": {
+                    "description": "betrieb_status_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "bezirk_id": {
+                    "description": "bezirk_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "added": {
+                    "description": "added",
+                    "type": "string",
+                    "format": "date"
+                },
+                "plz": {
+                    "description": "plz",
+                    "type": "string"
+                },
+                "stadt": {
+                    "description": "stadt",
+                    "type": "string"
+                },
+                "lat": {
+                    "description": "lat",
+                    "type": "string"
+                },
+                "lon": {
+                    "description": "lon",
+                    "type": "string"
+                },
+                "kette_id": {
+                    "description": "kette_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "betrieb_kategorie_id": {
+                    "description": "betrieb_kategorie_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "name",
+                    "type": "string"
+                },
+                "str": {
+                    "description": "str",
+                    "type": "string"
+                },
+                "hsnr": {
+                    "description": "hsnr",
+                    "type": "string"
+                },
+                "status_date": {
+                    "description": "status_date",
+                    "type": "string",
+                    "format": "date"
+                },
+                "status": {
+                    "description": "status",
+                    "type": "boolean"
+                },
+                "ansprechpartner": {
+                    "description": "ansprechpartner",
+                    "type": "string"
+                },
+                "telefon": {
+                    "description": "telefon",
+                    "type": "string"
+                },
+                "fax": {
+                    "description": "fax",
+                    "type": "string"
+                },
+                "email": {
+                    "description": "email",
+                    "type": "string"
+                },
+                "begin": {
+                    "description": "begin",
+                    "type": "string",
+                    "format": "date"
+                },
+                "besonderheiten": {
+                    "description": "besonderheiten",
+                    "type": "string"
+                },
+                "public_info": {
+                    "description": "public_info",
+                    "type": "string"
+                },
+                "public_time": {
+                    "description": "public_time",
+                    "type": "boolean"
+                },
+                "ueberzeugungsarbeit": {
+                    "description": "ueberzeugungsarbeit",
+                    "type": "boolean"
+                },
+                "presse": {
+                    "description": "presse",
+                    "type": "boolean"
+                },
+                "sticker": {
+                    "description": "sticker",
+                    "type": "boolean"
+                },
+                "abholmenge": {
+                    "description": "abholmenge",
+                    "type": "boolean"
+                },
+                "team_status": {
+                    "description": "team_status",
+                    "type": "boolean"
+                },
+                "prefetchtime": {
+                    "description": "prefetchtime",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "team_conversation_id": {
+                    "description": "team_conversation_id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "springer_conversation_id": {
+                    "description": "springer_conversation_id",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "StoreCategory": {
+            "required": [
+                ""
+            ],
+            "properties": {
+                "id": {
+                    "description": "id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "name",
+                    "type": "string"
+                }
+            }
+        },
+        "Storestatus": {
+            "required": [
+                ""
+            ],
+            "properties": {
+                "id": {
+                    "description": "id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "name",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

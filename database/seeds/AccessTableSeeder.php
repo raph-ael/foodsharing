@@ -19,9 +19,9 @@ class AccessTableSeeder extends Seeder
     {
         $this->disableForeignKeys();
 
-        $this->call(UserTableSeeder::class);
+        //$this->call(UserTableSeeder::class);
         $this->call(RoleTableSeeder::class);
-        $this->call(UserRoleSeeder::class);
+        //$this->call(UserRoleSeeder::class);
         $this->call(PermissionTableSeeder::class);
         $this->call(PermissionRoleSeeder::class);
 

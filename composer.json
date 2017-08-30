@@ -18,9 +18,17 @@
         "laravel/framework": "5.4.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "~1.0",
-        "laravelcollective/html": "5.4.*",
         "orangehill/iseed": "dev-master",
-        "yajra/laravel-datatables-oracle": "^7.0"
+        "yajra/laravel-datatables-oracle": "^7.0",
+
+        "infyomlabs/laravel-generator": "5.4.x-dev",
+        "laravelcollective/html": "^5.4.0",
+        "infyomlabs/adminlte-templates": "5.4.x-dev",
+
+        "infyomlabs/swagger-generator": "dev-master",
+        "jlapp/swaggervel": "dev-master",
+
+        "doctrine/dbal": "~2.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^2.4",

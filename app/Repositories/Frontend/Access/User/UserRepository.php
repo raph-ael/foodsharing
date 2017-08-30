@@ -109,6 +109,12 @@ class UserRepository extends BaseRepository
         $user->confirmation_code = md5(uniqid(mt_rand(), true));
         $user->status = 1;
         $user->password = $provider ? null : bcrypt($data['password']);
+
+        /*
+         * generate the api token
+         */
+        $user->api_token = str_random(60);
+
         $confirm = false; // Whether or not they get an e-mail to confirm their account
 
         // If users require approval, confirmed is false regardless of account type

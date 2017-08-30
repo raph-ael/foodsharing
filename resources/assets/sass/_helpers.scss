@@ -27,3 +27,10 @@ $margin-padding: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50;
     padding-right:#{$mp}px !important;
   }
 }
+
+@mixin corners() {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}

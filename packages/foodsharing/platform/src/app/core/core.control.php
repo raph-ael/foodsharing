@@ -355,7 +355,7 @@ class Control
 								'name' => $recipient['name'],
 								'chatname' => "Betrieb ".$betriebName,
 								'message' => $msg,
-								'link' => BASE_URL.'/?page=msg&uc='.(int)fsId().'cid='.(int)$conversation_id
+								'link' => BASE_URL.'/messages?uc='.(int)fsId().'cid='.(int)$conversation_id
 							));
 						}elseif($memberNames = $msgDB->getChatMembers($conversation_id))
 						{
@@ -365,7 +365,7 @@ class Control
 								'name' => $recipient['name'],
 								'chatname' => implode(', ', $memberNames),
 								'message' => $msg,
-								'link' => BASE_URL.'/?page=msg&uc='.(int)fsId().'cid='.(int)$conversation_id
+								'link' => BASE_URL.'/messages?uc='.(int)fsId().'cid='.(int)$conversation_id
 							));
 						}else
 						tplMail($tpl_id, $recipient['email'],array(
@@ -373,7 +373,7 @@ class Control
 							'sender' => S::user('name'),
 							'name' => $recipient['name'],
 							'message' => $msg,
-							'link' => BASE_URL.'/?page=msg&uc='.(int)fsId().'cid='.(int)$conversation_id
+							'link' => BASE_URL.'/messages?uc='.(int)fsId().'cid='.(int)$conversation_id
 						));
 					}
 
@@ -407,7 +407,7 @@ class Control
 								'sender' => $sender['name'],
 								'name' => $foodsaver['name'],
 								'message' => $msg,
-								'link' => BASE_URL.'/?page=msg&u2c='.(int)$sender_id
+								'link' => BASE_URL.'/messages?u2c='.(int)$sender_id
 						));
 					}
 

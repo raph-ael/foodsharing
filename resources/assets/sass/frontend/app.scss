@@ -1,5 +1,3 @@
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 @font-face{
   font-family:'Alfa Slab One';
@@ -29,6 +27,9 @@
 
 // navbar
 @import "navbar";
+
+// panel
+@import "panel";
 
 // Plugins
 @import "../plugin/toastr/toastr.scss";

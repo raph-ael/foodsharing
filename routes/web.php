@@ -11,6 +11,7 @@ Route::get('lang/{lang}', 'LanguageController@swap');
 /* ----------------------------------------------------------------------- */
 
 
+
 /*
  * fs routes end
  */

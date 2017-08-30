@@ -7,17 +7,9 @@
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text
 {
-  background-color: white !important;
+  background-color: transparent !important;
+  color: white;
 }
-
-.navbar-default .navbar-nav > li > a.active:focus,
-.navbar-default .navbar-nav > li > a.active:hover,
-.navbar-default .navbar-nav > li > a.active,
-.navbar-default .dropdown-menu > li > a.active {
-  color: #262626;
-  background-color: #f5f5f5;
-}
-
 .navbar-brand{
   color: white !important;
   font-family: 'Alfa Slab One';
@@ -26,6 +18,12 @@
 {
   color: $color-green;
 }
+.navbar-brand:hover
+{
+  filter:     Alpha(opacity=20);
+  opacity:    0.8;
+  moz-opacity:    0.8;
+}
 
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover
 {
@@ -33,7 +31,52 @@
 }
 .dropdown-menu
 {
-  background-color: $color-brown !important;
-  color:white !important;
-  border-color: $color-brown !important;
+  background-color: white;
+  color: $color-brown;
+  border-color: white;
 }
+
+.dropdown-menu>li>a
+{
+  color: $color-brown;
+  @include corners();
+  margin:0 3px;
+}
+.dropdown-menu>li>a:hover
+{
+  background-color: $color-green;
+  color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+  background-color: $color-green;
+  border-color: $color-green;
+}
+.navbar-inverse .navbar-toggle:hover {
+  background-color: darken($color-green, 15);
+  border-color: darken($color-green, 15);
+}
+
+.nav>li>a
+{
+  padding: 8px 12px!important;
+  margin: 3px;
+  @include corners();
+}
+.nav>li>a:hover
+{
+  background-color: $color-green;
+}
+.navbar-brand
+{
+  padding:8px;
+  height:auto;
+  line-height:inherit;
+}
+
+@media (min-width:768px) {
+  .navbar-inverse {
+    min-height:30px;
+  }
+}
+

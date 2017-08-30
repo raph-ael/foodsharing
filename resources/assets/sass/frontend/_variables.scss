@@ -15,7 +15,7 @@ $color-green: #5AB946;
 // Brands
 $brand-primary: $color-green;
 $brand-info: #8eb4cb;
-$brand-success: #2ab27b;
+$brand-success: $color-green;
 $brand-warning: #cbb956;
 $brand-danger: #bf5329;
 
@@ -23,13 +23,13 @@ $brand-danger: #bf5329;
 // Typography
 $fa-font-path: "~font-awesome/fonts/";
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
+$font-family-sans-serif: "Helvetica Neue",Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+$font-size-base: 13px;
 $line-height-base: 1.6;
-$text-color: #636b6f;
+$text-color: lighten(#000, 15%);
 
 // Navbar
-$navbar-default-bg: #fff;
+$navbar-default-bg: $color-brown;
 
 // Buttons
 $btn-default-color: $text-color;
@@ -40,4 +40,4 @@ $input-border-focus: lighten($brand-primary, 25%);
 $input-color-placeholder: lighten($text-color, 30%);
 
 // Panels
-$panel-default-heading-bg: #fff;
+$panel-default-heading-bg: white;

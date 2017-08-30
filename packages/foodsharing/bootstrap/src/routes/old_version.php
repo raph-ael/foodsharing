@@ -53,6 +53,8 @@ Route::middleware(['web'])->group(function () use($bootstrap){
 
     Route::any('/mach-mit', $bootstrap . '@machMit');
 
+    Route::any('/messages', $bootstrap . '@messages');
+
     Route::any('/fairteiler', $bootstrap . '@fairteiler');
 
     Route::any('/statistik', $bootstrap . '@statistik');

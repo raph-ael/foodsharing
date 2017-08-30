@@ -178,8 +178,8 @@ return [
         /*
          * Package Service Providers...
          */
-        Arcanedev\LogViewer\LogViewerServiceProvider::class,
-        Arcanedev\NoCaptcha\NoCaptchaServiceProvider::class,
+        //Arcanedev\LogViewer\LogViewerServiceProvider::class,
+        //Arcanedev\NoCaptcha\NoCaptchaServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Creativeorange\Gravatar\GravatarServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
@@ -215,12 +215,18 @@ return [
 
         Foodsharing\TranslationManager\ManagerServiceProvider::class,
         Foodsharing\TranslationManager\TranslationServiceProvider::class,
-        Collective\Html\HtmlServiceProvider::class,
 
         /*
          * 3rd Party
          */
-        Orangehill\Iseed\IseedServiceProvider::class
+        Orangehill\Iseed\IseedServiceProvider::class,
+
+        Laracasts\Flash\FlashServiceProvider::class,
+        Prettus\Repository\Providers\RepositoryServiceProvider::class,
+        \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
+        \InfyOm\AdminLTETemplates\AdminLTETemplatesServiceProvider::class,
+
+        Jlapp\Swaggervel\SwaggervelServiceProvider::class
 
     ],
 
@@ -285,8 +291,8 @@ return [
         /*
          * Translation
          */
-        'Form'      => Collective\Html\FormFacade::class,
-        'Html'      => Collective\Html\HtmlFacade::class,
+        //'Form'      => Collective\Html\FormFacade::class,
+        'Flash'     => Laracasts\Flash\Flash::class,
 
     ],
 

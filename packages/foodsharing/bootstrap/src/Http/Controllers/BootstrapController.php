@@ -148,6 +148,13 @@ class BootstrapController extends BaseController
         ]);
     }
 
+    public function messages()
+    {
+        $this->staticRoute([
+            'page' => 'msg'
+        ]);
+    }
+
     public function news()
     {
         $this->staticRoute([

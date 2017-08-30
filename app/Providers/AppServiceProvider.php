@@ -65,17 +65,17 @@ class AppServiceProvider extends ServiceProvider
             /**
              * Loader for registering facades.
              */
-            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+            //$loader = \Illuminate\Foundation\AliasLoader::getInstance();
 
             /*
              * Load third party local providers
              */
-            $this->app->register(\Barryvdh\Debugbar\ServiceProvider::class);
+            //$this->app->register(\Barryvdh\Debugbar\ServiceProvider::class);
 
             /*
              * Load third party local aliases
              */
-            $loader->alias('Debugbar', \Barryvdh\Debugbar\Facade::class);
+            //$loader->alias('Debugbar', \Barryvdh\Debugbar\Facade::class);
         }
     }
 }

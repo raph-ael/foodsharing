@@ -2143,7 +2143,7 @@ function mailMessage($sender_id,$recip_id,$msg=NULL)
 					'sender' => $sender['name'],
 					'name' => $foodsaver['name'],
 					'message' => $msg,
-					'link' => BASE_URL.'/?page=msg&u2c='.(int)$sender_id
+					'link' => BASE_URL.'/messages?u2c='.(int)$sender_id
 				));
 			}
 			
