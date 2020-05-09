@@ -1,3 +1,6 @@
+# THIS HERE IS OUTDATED WE MOVED TO GITLAB - FCK MICROSOFT
+=> https://gitlab.com/foodsharing-dev
+
 # foodsharing.de
 The opensourced foodsharing and saving application foodsharing.de
 
